@@ -1,3 +1,5 @@
+package Dia3;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -30,9 +32,9 @@ public class Divisao {
         //2. Converta a distância de metros para quilômetros.
 
         System.out.println("Digite a distância em metros para a conversão em Km: ");
-        double distancia = sc.nextDouble();
+        double metros = sc.nextDouble();
 
-        double km = distancia / 1000.0;
+        double km = metros / 1000.0;
 
         System.out.println("A distancia em Km é igual a: " + km);
 

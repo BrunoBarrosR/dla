@@ -1,3 +1,5 @@
+package Dia3;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -17,16 +19,22 @@ public class Multiplicacao {
 
         System.out.println("O total da compra ficou em R$ " + total);
 
+        double precoProduto = 10;
+        double quantidadeProduto = 2;
+        double totalCompras = precoProduto * quantidadeProduto;
+
+        System.out.println(totalCompras);
+
         //2. Calcule a área de um retângulo.
 
 
-        System.out.print("Digite o valor da altura: ");
-        double ladoA = sc.nextDouble();
+        System.out.print("Digite o valor da comprimento: ");
+        double comprimento = sc.nextDouble();
 
-        System.out.print("Digite o valor da base: ");
-        double ladoB = sc.nextDouble();
+        System.out.print("Digite o valor da largura: ");
+        double largura = sc.nextDouble();
 
-        double area = ladoA * ladoB;
+        double area = comprimento * largura;
 
         System.out.println("A área do retangulo é igual a: " + area);
 
@@ -41,9 +49,6 @@ public class Multiplicacao {
         double totalAReceber = horasTrabalhadas * valorPorHora;
 
         System.out.println("O total a receber é igual a: R$ " + totalAReceber);
-
-
-
 
         sc.close();
     }
