@@ -1,11 +1,11 @@
-package Dia4;
+package dia4;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.Scanner;
 
-public class CNH {
+public class CNH_Des01 {
     //Renovação da CNH
     //
     //Vamos supor que estamos criando um sistema para controlar a renovação da carteira de motorista e
