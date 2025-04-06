@@ -47,6 +47,6 @@ public class PDV_Des06 {
                 System.out.println("Não há desconto a ser aplicado! Valor final: " + valorCompra);
                 break;
         }
-
+        sc.close();
     }
 }
