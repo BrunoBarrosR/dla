@@ -42,10 +42,11 @@ public class PDV_Des06 {
                 desconto = 50;
                 break;
             default:
+                desconto = 0;
                 break;
         }
 
-        valorCompra = valorCompra *(desconto * 0.01);
+        valorCompra = valorCompra * (1 - desconto / 100);
         System.out.println("Desconto de " + desconto + "% aplicado! Valor final: R$ " + valorCompra + "." );
         sc.close();
     }
