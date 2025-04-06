@@ -33,18 +33,20 @@ public class CNH_Des01 {
         LocalDate agora = LocalDate.now();
         LocalDate umAnoDepois = agora.plusYears(1);
         long idade = ChronoUnit.YEARS.between(anoNascimento, agora);
-
+        String vencimento = "";
 
 
         if(primeiraHabilitacao.equals("s")) {
-            System.out.println("Sua carteira vence em 1 ano");
+            vencimento = "1 ano";
         } else if (idade < 50) {
-            System.out.println("Sua carteira vence em 10 anos");
+            vencimento = "10 anos";
         } else if (idade < 70) {
-            System.out.println("Sua carteira vence em 5 anos");
+            vencimento = "5 anos";
         } else {
-            System.out.println("Sua carteira vence em 3 anos");
+            vencimento = "3 anos";
         }
+
+        System.out.println("Sua carteira vence em " + vencimento + ".");
 
         sc.close();
     }

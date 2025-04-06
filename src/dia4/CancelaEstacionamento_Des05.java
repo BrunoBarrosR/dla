@@ -8,26 +8,23 @@ public class CancelaEstacionamento_Des05 {
 
     public static void main(String[] args) {
 
-        int condicao = 4;
-        String estados = "";
+        String estado = "Manutenção";
 
-        switch (condicao) {
-            case 1:
-                estados = "Aberta";
+        switch (estado) {
+            case "Aberta":
+                System.out.println("Cancela está aberta! Acesso liberado");;
                 break;
 
-            case 2:
-                estados = "Fechada";
+            case "Fechada":
+                System.out.println("Cancela está fechada! Acesso bloqueado");
                 break;
 
-            case 3:
-                estados = "Manutenção";
+            case "Manutenção":
+                System.out.println("Cancela está em manutenção! Acesso bloqueado, use a outra entrada!!");
                 break;
-
             default:
-                estados = "Estado inválido";
+                System.out.println("Estado desconhecido!");
                 break;
         }
-        System.out.println(estados);
     }
 }

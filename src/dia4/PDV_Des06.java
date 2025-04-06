@@ -18,7 +18,8 @@ public class PDV_Des06 {
         Scanner sc = new Scanner(System.in);
 
         String tipoProduto = "";
-        double valorCompra;
+        double valorCompra = 0;
+        double desconto = 0;
 
         System.out.println("Digite o tipo de produto (Alimentos, Eletrônicos, Roupas, Livros, outros): ");
         tipoProduto = sc.nextLine();
@@ -26,27 +27,26 @@ public class PDV_Des06 {
         System.out.println("Digite o valor da compra: ");
         valorCompra = sc.nextDouble();
 
+
         switch (tipoProduto) {
             case "Alimentos":
-                valorCompra = valorCompra * 0.95;
-                System.out.println("Desconto de 5% aplicado! Valor final: " + valorCompra);
+                desconto = 5;
                 break;
             case "Eletrônicos":
-                valorCompra = valorCompra * 0.90;
-                System.out.println("Desconto de 10% aplicado! Valor final: " + valorCompra);
+                desconto = 10;
                 break;
             case "Roupas":
-                valorCompra = valorCompra * 0.80;
-                System.out.println("Desconto de 20% aplicado! Valor final :" + valorCompra);
+                desconto = 20;
                 break;
             case "Livros":
-                valorCompra = valorCompra * 0.50;
-                System.out.println("Desconto de 50% aplicado! Valor final: " + valorCompra);
+                desconto = 50;
                 break;
             default:
-                System.out.println("Não há desconto a ser aplicado! Valor final: " + valorCompra);
                 break;
         }
+
+        valorCompra = valorCompra *(desconto * 0.01);
+        System.out.println("Desconto de " + desconto + "% aplicado! Valor final: R$ " + valorCompra + "." );
         sc.close();
     }
 }
