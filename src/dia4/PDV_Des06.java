@@ -26,8 +26,6 @@ public class PDV_Des06 {
         System.out.println("Digite o valor da compra: ");
         valorCompra = sc.nextDouble();
 
-
-
         switch (tipoProduto) {
             case "Alimentos":
                 valorCompra = valorCompra * 0.95;
