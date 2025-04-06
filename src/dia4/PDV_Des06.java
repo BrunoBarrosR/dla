@@ -1,5 +1,8 @@
 package dia4;
 
+import java.util.Locale;
+import java.util.Scanner;
+
 public class PDV_Des06 {
 
     //Suponha que você está programando um sistema PDV e precisa calcular o desconto aplicado a um produto.
@@ -11,24 +14,39 @@ public class PDV_Des06 {
 
     public static void main(String[] args) {
 
-        int tipoProduto = 6;
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+
+        String tipoProduto = "";
+        double valorCompra;
+
+        System.out.println("Digite o tipo de produto (Alimentos, Eletrônicos, Roupas, Livros, outros): ");
+        tipoProduto = sc.nextLine();
+
+        System.out.println("Digite o valor da compra: ");
+        valorCompra = sc.nextDouble();
+
 
 
         switch (tipoProduto) {
-            case 1:
-                System.out.println("Alimentos - Desconto de 5% aplicado");
+            case "Alimentos":
+                valorCompra = valorCompra * 0.95;
+                System.out.println("Desconto de 5% aplicado! Valor final: " + valorCompra);
                 break;
-            case 2:
-                System.out.println("Eletrônicos - Desconto de 10% aplicado");
+            case "Eletrônicos":
+                valorCompra = valorCompra * 0.90;
+                System.out.println("Desconto de 10% aplicado! Valor final: " + valorCompra);
                 break;
-            case 3:
-                System.out.println("Roupas - Desconto de 20% aplicado");
+            case "Roupas":
+                valorCompra = valorCompra * 0.80;
+                System.out.println("Desconto de 20% aplicado! Valor final :" + valorCompra);
                 break;
-            case 4:
-                System.out.println("Livros - Desconto de 50% aplicado");
+            case "Livros":
+                valorCompra = valorCompra * 0.50;
+                System.out.println("Desconto de 50% aplicado! Valor final: " + valorCompra);
                 break;
             default:
-                System.out.println("Não há desconto a ser aplicado!");
+                System.out.println("Não há desconto a ser aplicado! Valor final: " + valorCompra);
                 break;
         }
 
