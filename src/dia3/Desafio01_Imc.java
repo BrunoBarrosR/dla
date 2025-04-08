@@ -1,6 +1,6 @@
 package dia3;
 
-public class Imc {
+public class Desafio01_Imc {
     public static void main(String[] args) {
         int peso = 83;
         double altura = 1.77;

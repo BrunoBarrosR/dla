@@ -1,6 +1,6 @@
 package dia4;
 
-public class CancelaEstacionamento_Des05 {
+public class Desafio05_CancelaEstacionamento {
 
     //Para testar sua habilidades, vamos direto para um desafio. Imagine que você está programando o sistema de controle de uma cancela de estacionamento.
     //Este sistema tem três possíveis estados: "Aberta", "Fechada" e "Manutenção".

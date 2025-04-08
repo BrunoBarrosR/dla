@@ -3,7 +3,7 @@ package dia3;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Desafio_04 {
+public class Desafio04_CalculadoraViagem {
     //Suponha que você está planejando uma viagem de carro. Seu carro faz 12 km por litro de gasolina, e você quer calcular o número de litros de combustível
     //que você precisará para a viagem, bem como o custo total do combustível.
 

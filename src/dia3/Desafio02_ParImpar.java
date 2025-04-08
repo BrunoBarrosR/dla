@@ -2,7 +2,7 @@ package dia3;
 
 import java.util.Scanner;
 
-public class Desafio_02 {
+public class Desafio02_ParImpar {
 
     public static void main(String[] args) {
         //Com o que você já sabe, quero que você crie um código que determine se um número é impar ou par.

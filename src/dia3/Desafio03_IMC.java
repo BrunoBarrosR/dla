@@ -3,7 +3,7 @@ package dia3;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Desafio_03 {
+public class Desafio03_IMC {
 
     public static void main(String[] args) {
 

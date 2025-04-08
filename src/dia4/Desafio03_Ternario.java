@@ -1,6 +1,6 @@
 package dia4;
 
-public class Ternario_Des03 {
+public class Desafio03_Ternario {
 
     //Analise esse código. Temos 2 variáveis, uma que controla a nota de um aluno e outra que representa o
     //status de aprovação em uma disciplina. Caso a nota seja maior ou igual a 70, então o aluno estará

@@ -3,7 +3,7 @@ package dia4;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Performance_Des02 {
+public class Desafio02_Performance {
     //Crie um algoritmo que precisa dizer para um aluno como foi sua performance em uma prova a partir da nota que ele tirou.
 
     //As regras são:

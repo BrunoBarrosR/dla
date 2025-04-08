@@ -3,7 +3,7 @@ package dia4;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class PDV_Des06 {
+public class Desafio06_PDV {
 
     //Suponha que você está programando um sistema PDV e precisa calcular o desconto aplicado a um produto.
 

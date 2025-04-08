@@ -1,6 +1,6 @@
 package dia4;
 
-public class Ternario2_Des04 {
+public class Desafio04_Ternario2 {
 
     //Condição ternária com expressão mais complexa
     //
