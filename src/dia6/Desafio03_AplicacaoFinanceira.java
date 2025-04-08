@@ -25,7 +25,5 @@ public class Desafio03_AplicacaoFinanceira {
            investimento = investimento + (investimento * taxaJuros / 100);
            System.out.printf("Seu investimento em %d ano(s) é igual a: R$ %.2f%n", i, investimento);
        }
-
     }
-
 }

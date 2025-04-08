@@ -7,10 +7,11 @@ public class Desafio01_IMC {
 
     public static void main(String[] args) {
 
-        double altura = 1.77;
-        double peso = 83.0;
+        double meuImc = imc(1.77, 83);
+        double imcAlline = imc(1.59, 51);
 
-        System.out.println(imc(altura, peso));
+        System.out.println(meuImc);
+        System.out.println(imcAlline);
     }
 
     public static double imc(double altura, double peso) {
