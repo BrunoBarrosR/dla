@@ -1,4 +1,4 @@
-package dia4;
+package semana1.dia4;
 
 import java.util.Locale;
 import java.util.Scanner;

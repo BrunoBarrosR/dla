@@ -1,4 +1,4 @@
-package dia4;
+package semana1.dia4;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;

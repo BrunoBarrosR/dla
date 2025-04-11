@@ -1,4 +1,4 @@
-package dia5;
+package semana1.dia5;
 
 public class Desafio01_AplicacaoFinanceira {
 

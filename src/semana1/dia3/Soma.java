@@ -1,4 +1,4 @@
-package dia3;
+package semana1.dia3;
 
 public class Soma {
 

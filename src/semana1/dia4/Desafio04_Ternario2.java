@@ -1,4 +1,4 @@
-package dia4;
+package semana1.dia4;
 
 public class Desafio04_Ternario2 {
 

@@ -1,4 +1,4 @@
-package dia5;
+package semana1.dia5;
 
 public class Desafio02_ContagemRegressiva {
     //Imagine que você é um engenheiro da NASA e está prestes a lançar um foguete. Você precisa fazer uma contagem regressiva a partir de 10 até o lançamento.

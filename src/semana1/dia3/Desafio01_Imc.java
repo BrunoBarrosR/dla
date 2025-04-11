@@ -1,4 +1,4 @@
-package dia3;
+package semana1.dia3;
 
 public class Desafio01_Imc {
     public static void main(String[] args) {

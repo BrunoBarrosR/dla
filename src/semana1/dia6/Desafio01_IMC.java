@@ -1,4 +1,4 @@
-package dia6;
+package semana1.dia6;
 
 public class Desafio01_IMC {
 
