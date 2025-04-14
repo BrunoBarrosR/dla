@@ -27,12 +27,12 @@ public class Desafio01_FuncoesArrayList {
 
     public static boolean includes(String elemento) {
         boolean resposta = false;
-        
-        for(int i = 0; i < array.length; i++) {
-            if (array[i].equals(elemento)) {
+
+        for (String string : array) {
+            if (string.equals(elemento)) {
                 resposta = true;
                 break;
-            }            
+            }
         }
         return resposta;
     }
