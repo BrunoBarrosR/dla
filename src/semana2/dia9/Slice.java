@@ -30,7 +30,7 @@ public class Slice {
         String[] arraySlice = new String[ultimoElemento - primeiroElemento];
         int contador = 0;
 
-        for(int i = primeiroElemento; i < ultimoElemento; i++){
+        for(int i = primeiroElemento; i < ultimoElemento && i < array.length; i++){
             arraySlice[contador] = array[i];
             contador++;
         }

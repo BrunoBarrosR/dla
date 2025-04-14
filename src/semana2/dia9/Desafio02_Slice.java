@@ -31,11 +31,11 @@ public class Desafio02_Slice {
         String[] arrayResultante = new String[quantidadeElementos];
         int contador = 0;
 
-        for (int i = primeiroElemento; i < ultimoElemento; i++) {
+        for (int i = primeiroElemento; i < ultimoElemento && i < array.length; i++) {
 
             arrayResultante[contador] = array[i];
 
-            contador = contador + 1;
+            contador++;
         }
         return arrayResultante;
     }
