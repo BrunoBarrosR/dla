@@ -28,8 +28,8 @@ public class Desafio01_FuncoesArrayList {
     public static boolean includes(String elemento) {
         boolean resposta = false;
 
-        for (String string : array) {
-            if (string.equals(elemento)) {
+        for (String item : array) {
+            if (item.equals(elemento)) {
                 resposta = true;
                 break;
             }
