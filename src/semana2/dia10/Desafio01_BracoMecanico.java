@@ -34,15 +34,10 @@ public class Desafio01_BracoMecanico {
 
 
     static boolean verificarCaixaCheia() {
-        if (caixa.size() < 10) {
-            return false;
-        } else {
-            return true;
-        }
+        return caixa.size() >= 10;
     }
 
     static Stack<String> criarNovaCaixa() {
-        Stack<String> novaCaixa = new Stack<>();
-        return novaCaixa;
+        return new Stack<>();
     }
 }
