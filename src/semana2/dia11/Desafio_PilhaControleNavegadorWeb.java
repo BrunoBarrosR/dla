@@ -17,7 +17,7 @@ package semana2.dia11;
 
 import java.util.Stack;
 
-public class Desafio_ControleNavegadorWeb {
+public class Desafio_PilhaControleNavegadorWeb {
 
 
     static Stack<String> pilhaVoltar = new Stack<>();

@@ -2,7 +2,7 @@ package semana2.dia10;
 
 import java.util.Stack;
 
-public class Desafio01_BracoMecanico {
+public class Desafio01_PilhaBracoMecanico {
 
     static Stack<String> caixa = new Stack<>();
 
