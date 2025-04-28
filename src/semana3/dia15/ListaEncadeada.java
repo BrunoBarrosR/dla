@@ -14,16 +14,20 @@ public class ListaEncadeada {
         }
     }
 
-//    public void inserLast(String element) {
-//        final Node newNode = new Node(element);
-//
-//        if(head == null) {
-//
-//        }
-//
-//
-//
-//    }
+    public void inserLast(String element) {
+        final Node newNode = new Node(element);
+
+        if(head == null) {
+            head = newNode;
+        } else {
+            Node atual = head;
+            while(atual.next != null) {
+                atual = atual.next;
+            }
+            atual.next = newNode;
+        }
+
+    }
 //
 //    public void insertAt(String element) {
 //
@@ -45,5 +49,14 @@ public class ListaEncadeada {
 //
 //    }
 
+
+    public void print() {
+        Node atual = head;
+        while (atual != null) {
+            System.out.print(atual.element + " -> ");
+            atual = atual.next;
+        }
+        System.out.println("null");
+    }
 
 }

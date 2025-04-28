@@ -3,17 +3,23 @@ package semana3.dia15;
 public class NoMain {
 
     public static void main(String[] args) {
-        ListaEncadeada lista = new ListaEncadeada();
+        ListaEncadeada lista1 = new ListaEncadeada();
+        ListaEncadeada lista2 = new ListaEncadeada();
 
-        lista.insertFirst("10");
-        lista.insertFirst("20");
-        lista.insertFirst("30");
+        lista1.insertFirst("10");
+        lista1.insertFirst("20");
+        lista1.insertFirst("30");
 
-//        lista.inserLast("10");
-//        lista.inserLast("20");
-//        lista.inserLast("30");
+        lista2.inserLast("10");
+        lista2.inserLast("20");
+        lista2.inserLast("30");
+        lista2.inserLast("40");
+        lista2.inserLast("50");
 
 
-        System.out.println(lista);
+        lista1.print();
+        lista2.print();
+
+
     }
 }
