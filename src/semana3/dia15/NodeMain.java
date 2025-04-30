@@ -1,6 +1,6 @@
 package semana3.dia15;
 
-public class NoMain {
+public class NodeMain {
 
     public static void main(String[] args) {
         ListaEncadeada lista1 = new ListaEncadeada();
@@ -15,6 +15,9 @@ public class NoMain {
         lista2.inserLast("30");
         lista2.inserLast("40");
         lista2.inserLast("50");
+
+        lista1.insertAt("69", 1);
+        lista1.insertAt("999", 3);
 
 
         lista1.print();

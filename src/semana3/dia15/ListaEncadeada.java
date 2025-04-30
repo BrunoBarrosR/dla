@@ -28,11 +28,36 @@ public class ListaEncadeada {
         }
 
     }
-//
-//    public void insertAt(String element) {
-//
-//    }
-//
+
+    public void insertAt(String element, int position) {
+        final Node newNode = new Node(element);
+
+        if (position == 0) {
+            //Se for para inserir na posição Zero, ou seja, primeira posição. Vou passar o ponteiro do head atual para o newNode.next. Depois passo o newNode para head
+            newNode.next = head;
+            head = newNode;
+            return;
+        }
+
+        Node atual = head;
+        Node anterior = null;
+        int contador = 0;
+
+        while(contador < position && atual != null) {
+            anterior = atual;
+            atual = atual.next;
+            contador++;
+        }
+
+        if (contador == position) {
+            anterior.next = newNode;
+            newNode.next = atual;
+
+        } else {
+            System.out.println("Posição inválida!");
+        }
+    }
+
 //    public void deleteAt(String element) {
 //
 //    }
