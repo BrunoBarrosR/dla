@@ -10,11 +10,11 @@ public class NodeMain {
         lista1.insertFirst("20");
         lista1.insertFirst("30");
 
-        lista2.inserLast("10");
-        lista2.inserLast("20");
-        lista2.inserLast("30");
-        lista2.inserLast("40");
-        lista2.inserLast("50");
+        lista2.insertLast("10");
+        lista2.insertLast("20");
+        lista2.insertLast("30");
+        lista2.insertLast("40");
+        lista2.insertLast("50");
 
         lista1.insertAt("69", 1);
         lista1.insertAt("999", 3);

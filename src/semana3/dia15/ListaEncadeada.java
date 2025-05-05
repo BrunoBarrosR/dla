@@ -14,7 +14,7 @@ public class ListaEncadeada {
         }
     }
 
-    public void inserLast(String element) {
+    public void insertLast(String element) {
         final Node newNode = new Node(element);
 
         if(head == null) {
