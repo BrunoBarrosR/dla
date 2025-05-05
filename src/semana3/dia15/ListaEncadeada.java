@@ -5,13 +5,8 @@ public class ListaEncadeada {
 
     public void insertFirst(String element) {
         final Node newNode = new Node(element);
-
-        if (head == null) {
-            head = newNode;
-        } else {
-            newNode.next = head;
-            head = newNode;
-        }
+        newNode.next = head;
+        head = newNode;
     }
 
     public void insertLast(String element) {
@@ -19,13 +14,14 @@ public class ListaEncadeada {
 
         if(head == null) {
             head = newNode;
-        } else {
-            Node atual = head;
-            while(atual.next != null) {
-                atual = atual.next;
-            }
-            atual.next = newNode;
+            return;
         }
+
+        Node atual = head;
+        while(atual.next != null) {
+            atual = atual.next;
+        }
+        atual.next = newNode;
 
     }
 
@@ -41,15 +37,15 @@ public class ListaEncadeada {
 
         Node atual = head;
         Node anterior = null;
-        int contador = 0;
+        int index = 0;
 
-        while(contador < position && atual != null) {
+        while(index < position && atual != null) {
             anterior = atual;
             atual = atual.next;
-            contador++;
+            index++;
         }
 
-        if (contador == position) {
+        if (index == position) {
             anterior.next = newNode;
             newNode.next = atual;
 
@@ -58,10 +54,37 @@ public class ListaEncadeada {
         }
     }
 
-//    public void deleteAt(String element) {
-//
-//    }
-//
+    public void deleteAt(int position) {
+
+        if (head == null) {
+            System.out.println("A lista está vazia!");
+            return;
+        }
+
+        if (position == 0) {
+            head = head.next;
+            return;
+        }
+
+        Node atual = head;
+        Node anterior = null;
+        int index = 0;
+
+        while(index < position && atual != null) {
+            anterior = atual;
+            atual = atual.next;
+            index++;
+        }
+
+        if (index == position) {
+            anterior.next = atual.next;
+
+        } else {
+            System.out.println("Essa posição não existe!");
+        }
+    }
+
+
 //    public void searchAt(String element) {
 //
 //    }
@@ -70,9 +93,29 @@ public class ListaEncadeada {
 //
 //    }
 //
-//    public void indexOf() {
-//
-//    }
+    public void indexOf(String element) {
+        if (head == null) {
+            System.out.println("Lista vazia!");
+            return;
+        }
+
+        Node anterior = null;
+        Node atual = head;
+        int index = 0;
+
+        while (atual != null) {
+
+            if(atual.element.equals(element)){
+                System.out.println(index);
+                return;
+            }
+
+            anterior = atual;
+            atual = atual.next;
+            index++;
+        }
+        System.out.println("Elemento não encontrado: " + element);
+    }
 
 
     public void print() {
